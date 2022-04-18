@@ -146,3 +146,17 @@
     text-decoration: none;
 }
 
+.fa{
+    position: absolute;
+    right:620px;
+    color: #A9A9A999;
+}
+
+.fa-envelope{
+    bottom: 616px;
+}
+
+.fa-lock{
+    bottom: 516px;
+}
+
