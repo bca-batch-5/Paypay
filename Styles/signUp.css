@@ -114,17 +114,8 @@
     color: #A9A9A999;
     opacity: 60%;
 }
-.forgot-pass{
-    text-decoration: none;
-    color: #A9A9A999;
-    opacity: 60%;
-    font-size: 14px;
-    padding-left: 240px;
-    font-weight: 600;
-    line-height: 24px;
-}
 
-#btn-login{
+#btn-signUp{
     width: 350px;
     height: 40px;
     border: none;
@@ -140,7 +131,7 @@
     background: none;
     border: none;
     color: #A9A9A999;
-    bottom: 508px;
+    bottom: 431px;
 }
 
 .form-subtext{
@@ -152,21 +143,27 @@
     line-height: 23px;
 }
 
-.signup{
+.login{
     text-decoration: none;
 }
 
-.fa-envelope{
+.fa-user{
     position: absolute;
     right:620px;
     color: #A9A9A999;
     bottom: 616px;
+}
+.fa-envelope{
+    position: absolute;
+    right:620px;
+    color: #A9A9A999;
+    bottom: 538px;
 }
 
 .fa-lock{
     position: absolute;
     right:620px;
     color: #A9A9A999;
-    bottom: 516px;
+    bottom: 437px;
 }
 
