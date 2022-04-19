@@ -112,7 +112,9 @@
     height: 30px;
     padding-left: 30px;
     color: #A9A9A999;
+    background: none;
     opacity: 60%;
+    font-weight: 600;
 }
 
 #btn-signUp{
@@ -124,7 +126,7 @@
     margin-top: 40px;
 }
 
-#btn-eye{
+#btnEye{
     position: absolute;
     right: 295px;
     width: 30px;

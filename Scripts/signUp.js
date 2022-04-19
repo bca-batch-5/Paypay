@@ -2,8 +2,28 @@ const email = document.getElementById("email")
 const icon  = document.getElementById("envelope")
 const pass  = document.getElementById("password")
 const lock = document.getElementById("lock")
+const username = document.getElementById("username")
+const user =document.getElementById("user")
 const btnEye = document.getElementById("btnEye")
 
+username.addEventListener("click",() =>{
+    username.style.outline=`none`;
+})
+
+
+username.addEventListener("input",() =>{
+    if(username.value == "") {
+        user.style.color=`#A9A9A999`;
+        username.style.borderBottomColor=`#A9A9A999`;
+        username.style.outline=`none`;
+    }else{
+        user.style.color=`#6379F4`;
+        username.style.borderBottomColor=`#6379F4`;
+        username.style.outline=`none`;
+        username.style.color=`black`;
+    }
+    
+})
 
 email.addEventListener("click",() =>{
     email.style.outline=`none`;
@@ -43,7 +63,6 @@ pass.addEventListener("input",() =>{
     }
  
 })
-
 
 // bagian merubah view password
 
