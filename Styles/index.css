@@ -8,15 +8,13 @@ html {
   box-sizing: border-box;
 }
 .border-utama {
-  height: 100%;
 }
 .first-border {
-  height: 135%;
+  height: 1000px;
   display: flex;
 }
 .border-kiri {
-  height: 100%;
-  width: 60%;
+  width: 912px;
 }
 .logo-text {
   margin-top: 40px;
@@ -75,32 +73,30 @@ html {
   text-decoration: none;
 }
 .border-kanan {
-  width: 40%;
-  height: 100%;
+  width: 610px;
   display: flex;
   flex-direction: row;
   justify-content: end;
 }
 .border-login-regis {
-  width: 100%;
+  width: 610px;
   background-image: url(../Assets/KotakKanan.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
 .garis {
-  width: 40%;
+  width: 610px;
   position: absolute;
   top: 50px;
 }
 .gelombang {
   position: absolute;
   top: 50px;
-  width: 40%;
+  width: 610px;
   right: 0px;
 }
 .border-phone {
-  width: 30%;
-  height: 105%;
+  width: 500px;
   position: absolute;
   top: 100px;
   right: 30px;
@@ -153,13 +149,12 @@ html {
   transform: scale(1.1) translateY(-5px);
 }
 .second-border {
-  height: 100%;
-  width: 100%;
+  height: 600px;
   background: rgba(71, 58, 209, 0.06);
 }
 .second-border-dalam {
   padding: 60px 100px 0px 100px;
-  height: 100%;
+  height: 700px;
 }
 .second-border-judul {
   font-family: "Nunito Sans";
@@ -174,7 +169,7 @@ html {
 }
 .second-border-text {
   text-align: center;
-  width: 42%;
+  width: 550px;
   margin: 0 auto;
 }
 .second-text {
@@ -186,8 +181,8 @@ html {
   color: #3a3d42;
 }
 .border-space-card {
-  width: 90%;
-  height: 45%;
+  width: 1180px;
+  height: 285px;
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
@@ -230,24 +225,17 @@ html {
   margin-top: 20px;
 }
 .third-border {
-  width: 100%;
-  height: 70%;
+  height: 430px;
 }
 .third-border-dalam {
-  height: 100%;
-  width: 100%;
-  height: 100%;
-  width: 100%;
+  height: 430px;
   display: flex;
 }
 .third-border-kiri {
-  width: 50%;
+  width: 680px;
   display: flex;
-  height: 100%;
   margin-left: 100px;
-  /* margin-bottom: 124px; */
   justify-content: center;
-  /* align-items: center; */
   flex-direction: column;
 }
 .third-border-kiri-judul {
@@ -260,7 +248,7 @@ html {
   color: #3a3d42;
 }
 .third-border-kiri-text {
-  width: 45%;
+  width: 400px;
 }
 .text-border-kiri {
   font-family: "Nunito Sans";
@@ -283,19 +271,14 @@ html {
   flex-direction: column;
 }
 .fourth-border {
-  height: 100%;
-  width: 100%;
   background: rgba(71, 58, 209, 0.06);
 }
 .fourth-border-dalam{
-    height: 100%;
-    width: 100%;
     display: flex;
     padding: 50px;
 }
 .fourth-border-kiri{
-    width: 40%;
-    height: 100%;
+    width: 570px;
 }
 
 .fourth-border-phone{
@@ -310,8 +293,7 @@ html {
     width: 60%;
 }
 .fourth-border-kanan{
-    width: 60%;
-    height: 100%;
+    width: 850px;
     display: flex;
     flex-direction: column;
 }
@@ -329,7 +311,7 @@ html {
     background: white;
     border-radius: 30px;
     display: flex;
-    width: 70%;
+    width:600px;
     margin-bottom: 20px;
     justify-content: center;
 }
