@@ -114,46 +114,14 @@
     color: #A9A9A999;
     opacity: 60%;
 }
-.forgot-pass{
-    text-decoration: none;
-    color: #A9A9A999;
-    opacity: 60%;
-    font-size: 14px;
-    padding-left: 240px;
-    font-weight: 600;
-    line-height: 24px;
-}
 
-#btn-login{
+#btn-reset{
     width: 350px;
     height: 40px;
     border: none;
     color: #A9A9A999;
     border-radius: 10px;
     margin-top: 40px;
-}
-
-#btn-eye{
-    position: absolute;
-    right: 295px;
-    width: 30px;
-    background: none;
-    border: none;
-    color: #A9A9A999;
-    bottom: 508px;
-}
-
-.form-subtext{
-    margin-top: 20px;
-    width: 350px;
-    text-align: center;
-    color: #A9A9A999;
-    font-weight: 600;
-    line-height: 23px;
-}
-
-.signup{
-    text-decoration: none;
 }
 
 .lock1{
