@@ -113,13 +113,16 @@
     padding-left: 30px;
     color: #A9A9A999;
     opacity: 60%;
+    background: none;
+    font-weight: 600;
 }
+
 .forgot-pass{
     text-decoration: none;
     color: #A9A9A999;
     opacity: 60%;
     font-size: 14px;
-    padding-left: 240px;
+    margin-left: 240px;
     font-weight: 600;
     line-height: 24px;
 }
