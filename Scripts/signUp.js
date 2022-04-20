@@ -5,10 +5,8 @@ const lock = document.getElementById("lock")
 const username = document.getElementById("username")
 const user =document.getElementById("user")
 const btnEye = document.getElementById("btnEye")
+const btnSignUp = document.getElementById("btnSignUp")
 
-username.addEventListener("click",() =>{
-    username.style.outline=`none`;
-})
 
 
 username.addEventListener("input",() =>{
@@ -25,9 +23,7 @@ username.addEventListener("input",() =>{
     
 })
 
-email.addEventListener("click",() =>{
-    email.style.outline=`none`;
-})
+
 
 
 email.addEventListener("input",() =>{
@@ -45,21 +41,19 @@ email.addEventListener("input",() =>{
 })
 
 
-pass.addEventListener("click",() =>{
-    pass.style.outline=`none`;
-})
 
 pass.addEventListener("input",() =>{
     if(pass.value == "") {
         lock.style.color=`#A9A9A999`;
         pass.style.borderBottomColor=`#A9A9A999`;
         pass.style.outline=`none`;
+        btnEye.style.color=`#A9A9A999`
     }else{
         lock.style.color=`#6379F4`;
         pass.style.borderBottomColor=`#6379F4`;
         pass.style.outline=`none`;
         pass.style.color=`black`;
-
+        btnEye.style.color=`#6379F4`
     }
  
 })
@@ -85,3 +79,25 @@ btnEye.addEventListener("click",() =>{
         iconBtn.classList.remove(`fa-eye`)
     }
 })
+
+
+
+// disable button\
+
+
+btnSignUp.disabled = true;
+
+pass.addEventListener(`input`, btnChange)
+
+function btnChange() {
+    if (username.value == ""&email.value == ""&pass.value == "") {
+        btnSignUp.disabled = true;
+        btnSignUp.style.backgroundColor="#A9A9A999"
+        btnSignUp.style.color="grey"
+    }else{
+        btnSignUp.disabled = false;
+        btnSignUp.style.backgroundColor=`#6379F4`;
+        btnSignUp.style.color=`white`
+    }
+    
+}

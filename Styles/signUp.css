@@ -115,13 +115,15 @@
     background: none;
     opacity: 60%;
     font-weight: 600;
+    outline:none;
 }
 
-#btn-signUp{
+#btnSignUp{
     width: 350px;
     height: 40px;
     border: none;
-    color: #A9A9A999;
+    background-color: #A9A9A999;
+    color: grey;
     border-radius: 10px;
     margin-top: 40px;
 }
