@@ -23,6 +23,24 @@
     background-position: center;
     background-size: cover;
 }
+.left-button-box{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.left-button{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: none;
+    color: white;
+    background-color: #A9A9A999;
+    transition: 0.5s;
+}
+
+.left-button:hover{
+    color: black;
+    background-color: white;
+}
 
 .left-title-box{
     display: flex;
