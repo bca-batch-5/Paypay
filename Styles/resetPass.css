@@ -1,0 +1,143 @@
+/* default */
+*,*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    /* overflow-x: hidden; */
+}
+
+.login-box{
+    position: relative;
+    display: flex;
+    width: 1440px;
+    height: 961px;
+}
+
+
+/* bagian left box */
+.left-box{
+    width: 768.5px;
+    height: 100%;
+    background-image: url(../Assets/Mask\ Group.svg);
+    background-position: center;
+    background-size: cover;
+}
+
+.left-title-box{
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 700;
+    color: white;
+    margin-left: 60px;
+    margin-top: 50px ;
+    
+
+}
+
+.left-image-box{
+    width: 100%;
+    height: 575px;
+}
+.image-phone1{
+    position: absolute;
+    z-index: 1;
+    left: 265px;
+}
+.image-phone2{
+    position: absolute;
+    left: 115px;
+}
+.left-subtext-box{
+    width: 75% ;
+    align-items: center;
+    margin-left: 113px;
+    color: white;
+}
+
+.left-subtext-box h2{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+}
+
+.left-subtext-box p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+/* bagian right box */
+
+.right-box{
+    width: 671.5px;
+    height: 100%;
+    background-color: #FAFCFF;
+}
+.right-all-box{
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+.right-title-box{
+    width: 64%;
+    color: #3A3D42;
+}
+
+.right-title-box h2{
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: 700;
+}
+
+.right-title-box p{
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    opacity: 60%;
+}
+
+
+.right-form-box{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.form{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 350px;
+    height: 30px;
+    padding-left: 30px;
+    color: #A9A9A999;
+    opacity: 60%;
+    outline: none;
+    font-weight: 600;
+}
+
+#btnReset{
+    width: 350px;
+    height: 40px;
+    border: none;
+    background-color: #A9A9A999;
+    color: grey;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.lock1{
+    position: absolute;
+    right:620px;
+    color: #A9A9A999;
+    bottom: 616px;
+}
+
+.lock2{
+    position: absolute;
+    right:620px;
+    color: #A9A9A999;
+    bottom: 516px;
+}
+
