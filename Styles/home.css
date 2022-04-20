@@ -199,3 +199,13 @@ nav {
 .border-image-button{
     margin-right: 5px;
 }
+
+@media screen and (max-width: 1440px) {
+    header, footer{
+        width: 1440px;
+    }
+    .border-main {
+        width: 1440px;
+        height: 800px;
+    }
+}
