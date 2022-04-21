@@ -79,7 +79,6 @@ nav {
 
 #bellButton{
   border: none;
-  width: auto;
   background-color: white;
   transition: 0.2s;
   border-radius: 10px;
