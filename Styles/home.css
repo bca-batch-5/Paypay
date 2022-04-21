@@ -361,12 +361,15 @@ nav {
   width: 200px;
 }
 @media screen and (max-width: 1440px) {
-  header,
+  /* header,
   footer {
     width: 1440px;
-  }
+  } */
   .border-main {
-    width: 1440px;
+    width: 1360px;
     height: 800px;
+  }
+  .border-main-dalam {
+    margin: 40px 70px;
   }
 }
