@@ -7,6 +7,11 @@
     /* overflow-x: hidden; */
 }
 
+body{
+    overflow-x: hidden;
+}
+
+
 .login-box{
     position: relative;
     display: flex;
