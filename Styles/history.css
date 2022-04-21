@@ -1,0 +1,72 @@
+.border-kanan-history{
+    width: 987px;
+    height: 100%;
+    border-radius: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgb(0 0 0 / 20%);
+    border-radius: 25px;
+    padding: 40px;
+}
+.border-main-kanan-history{
+    width: 987px;
+    height: 100%;
+    border-radius: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgb(0 0 0 / 20%);
+    border-radius: 25px;
+}
+.text-history{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #3A3D42;
+    margin-bottom: 40px;
+}
+.text-this-week{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #7A7886;
+}
+.history-nominal-minus{
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: right;
+    color: red;
+    width: 700px;
+}
+.history-nominal-plus{
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: right;
+    color: #1ec15f;
+    width: 700px;
+}
+.text-this-month{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #7A7886;
+    margin: 50px 0px;
+}
+.custom-image{
+    background-image: url(../Assets/Adobe.png) !important;
+}
+.custom-image-1{
+    background-image: url(../Assets/Netflix.png) !important;
+}
+.custom-image-2{
+    background-image: url(../Assets/Foto2.png) !important;
+}
