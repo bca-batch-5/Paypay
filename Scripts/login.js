@@ -79,6 +79,7 @@ btnEye.addEventListener("click",() =>{
 function validationEmail() {
     let format = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     if (email.value.match(format) ) {
+        aHref.href ="home.html";
         return true;
     }else{
         icon.style.color=`red`;
