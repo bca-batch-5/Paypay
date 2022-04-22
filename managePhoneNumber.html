@@ -39,6 +39,7 @@
     <link rel="stylesheet" href="./Styles/status.css" />
     <link rel="stylesheet" href="./Styles/profil.css" />
     <link rel="stylesheet" href="./Styles/personalInfo.css" />
+    <link rel="stylesheet" href="./Styles/managePhoneNumber.css">
   </head>
   <body>
     <!-- header navbar -->
@@ -125,32 +126,21 @@
           </div>
         </div>
         <!-- layout kanan -->
-        <div class="border-main-kanan-profil">
+        <div class="border-main-kanan-profil" id="test">
           <!-- Menu Status -->
-          <div class="border-kanan-history">
-            <div class="text-personal-info">Personal Information</div>
-            <div class="text-personal-desc">
-              We got your personal information from the sign up proccess. If you
-              want to make changes on your information, contact our support.
-            </div>
-            <div class="border-menu-personal-info">
-              <div class="text-firstName-placeholder">First Name</div>
-              <div class="text-firstName">Robert</div>
-            </div>
-            <div class="border-menu-personal-info">
-              <div class="text-firstName-placeholder">Last Name</div>
-              <div class="text-firstName">Chandler</div>
-            </div>
-            <div class="border-menu-personal-info">
-              <div class="text-firstName-placeholder">Verified E-mail</div>
-              <div class="text-firstName">pewdiepie1@gmail.com</div>
+          <div class="border-kanan-history" >
+            <div class="text-personal-info">Manage Phone Number</div>
+            <div class="text-personal-desc-manage"> 
+              You can only delete the phone number and then you must add another phone number.
             </div>
             <div class="border-menu-personal-info">
               <div class="text-firstName-placeholder">Phone Number</div>
               <div class="border-text-notelp-profil">
-                <div class="text-firstName">+62 813-9387-7946</div>
-                <a href="addPhoneNumber.html">
-                  <div class="text-manage">Manage</div>
+                <div class="text-firstName" id="showNoPhone"></div>
+                <a href="#">
+                  <div>
+                    <img src="./Assets/trash.png" alt="">
+                  </div>
                 </a>
               </div>
             </div>
@@ -170,4 +160,5 @@
       </div>
     </footer>
   </body>
+  <script src="./Scripts/managePhoneNumber.js"></script>
 </html>
