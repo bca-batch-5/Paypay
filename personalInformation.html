@@ -37,6 +37,8 @@
     <link rel="stylesheet" href="./Styles/home.css" />
     <link rel="stylesheet" href="./Styles/history.css" />
     <link rel="stylesheet" href="./Styles/status.css" />
+    <link rel="stylesheet" href="./Styles/profil.css" />
+    <link rel="stylesheet" href="./Styles/personalInfo.css" />
   </head>
   <body>
     <!-- header navbar -->
@@ -56,9 +58,9 @@
       </nav>
     </header>
     <!-- main home page -->
-    <main class="border-main-status">
+    <main class="border-main-profil">
       <article class="border-main-dalam">
-        <div class="border-main-kiri-status">
+        <div class="border-main-kiri-profil">
           <div class="border-main-kiri-dalam-status">
             <!-- dashboard -->
             <div class="border-main-list-menu">
@@ -74,11 +76,11 @@
             </div>
             <!-- Transfer -->
             <div class="border-main-list-menu">
-              <div class="pinggiran"></div>
+              <div></div>
               <a href="#">
-                <div class="border-menu selected">
+                <div class="border-menu">
                   <span>
-                    <img src="./Assets/arrow-up-biru.png" alt="" />
+                    <img src="./Assets/arrow-up-black.png" alt="" />
                   </span>
                   <span class="text-menu">Transfer</span>
                 </div>
@@ -98,11 +100,11 @@
             </div>
             <!-- Profil -->
             <div class="border-main-list-menu">
-              <div></div>
-              <a href="profil.html">
-                <div class="border-menu">
+              <div class="pinggiran"></div>
+              <a href="#">
+                <div class="border-menu selected">
                   <span>
-                    <img src="./Assets/user.png" alt="" />
+                    <img src="./Assets/user-biru.png" alt="" />
                   </span>
                   <span class="text-menu">Profil</span>
                 </div>
@@ -112,7 +114,7 @@
             <div class="border-main-list-menu custom-text-logout">
               <div></div>
               <a href="index.html">
-                <div class="border-menu-status">
+                <div class="border-menu-profil">
                   <span>
                     <img src="./Assets/log-out.png" alt="" />
                   </span>
@@ -123,50 +125,34 @@
           </div>
         </div>
         <!-- layout kanan -->
-        <div class="border-main-kanan-status">
+        <div class="border-main-kanan-profil">
           <!-- Menu Status -->
           <div class="border-kanan-history">
-            <div class="border-kanan-status-failed">
-              <div>
-                <img src="./Assets/failed.png" alt="Success" />
+            <div class="text-personal-info">Personal Information</div>
+            <div class="text-personal-desc">
+              We got your personal information from the sign up proccess. If you
+              want to make changes on your information, contact our support.
+            </div>
+            <div class="border-menu-personal-info">
+              <div class="text-firstName-placeholder">First Name</div>
+              <div class="text-firstName">Robert</div>
+            </div>
+            <div class="border-menu-personal-info">
+              <div class="text-firstName-placeholder">Last Name</div>
+              <div class="text-firstName">Chandler</div>
+            </div>
+            <div class="border-menu-personal-info">
+              <div class="text-firstName-placeholder">Verified E-mail</div>
+              <div class="text-firstName">pewdiepie1@gmail.com</div>
+            </div>
+            <div class="border-menu-personal-info">
+              <div class="text-firstName-placeholder">Phone Number</div>
+              <div class="border-text-notelp-profil">
+                <div class="text-firstName">+62 813-9387-7946</div>
+                <a href="#">
+                  <div class="text-manage">Manage</div>
+                </a>
               </div>
-              <div class="text-failed">Transfer Failed</div>
-              <div class="text-notif-failed">
-                We can’t transfer your money at the moment, we recommend you to check your internet connection and try again.
-              </div>
-            </div>
-            <!-- Ammount -->
-            <div class="border-kanan-ammount">
-              <div class="text-amount">Ammount</div>
-              <div class="text-nominal">Rp100.000</div>
-            </div>
-            <div class="border-kanan-ammount">
-              <div class="text-amount">Balance Left</div>
-              <div class="text-nominal">Rp100.000.000</div>
-            </div>
-            <div class="border-kanan-ammount">
-              <div class="text-amount">Date & Time</div>
-              <div class="text-nominal">May 11, 2020 - 11.00</div>
-            </div>
-            <div class="border-kanan-ammount">
-              <div class="text-amount">Notes</div>
-              <div class="text-nominal">Buying some pants</div>
-            </div>
-            <div class="text-transfer-to">Transfer To</div>
-            <!-- profil orang yang mau di transfer -->
-            <div class="border-kanan-ammount">
-              <div class="status-profil">
-                <div class="status-photo"></div>
-                <div>
-                  <div class="status-nama">Samuel Suhi</div>
-                  <div class="nav-notelp">+62 8139 3877 7946</div>
-                </div>
-              </div>
-            </div>
-            <div class="border-kanan-button">
-              <a href="#" class="border-back-to-home text-back-home text-try-again">
-                <div>Try Again</div>
-              </a>
             </div>
           </div>
         </div>
