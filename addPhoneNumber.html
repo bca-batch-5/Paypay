@@ -39,6 +39,7 @@
     <link rel="stylesheet" href="./Styles/status.css" />
     <link rel="stylesheet" href="./Styles/profil.css" />
     <link rel="stylesheet" href="./Styles/personalInfo.css" />
+    <link rel="stylesheet" href="./Styles/addPhoneNumber.css" />
   </head>
   <body>
     <!-- header navbar -->
@@ -125,35 +126,35 @@
           </div>
         </div>
         <!-- layout kanan -->
-        <div class="border-main-kanan-profil">
+        <div class="border-main-kanan-profil" id="test">
           <!-- Menu Status -->
-          <div class="border-kanan-history">
-            <div class="text-personal-info">Personal Information</div>
+          <div class="border-kanan-history" >
+            <div class="text-personal-info">Add Phone Number</div>
             <div class="text-personal-desc">
-              We got your personal information from the sign up proccess. If you
-              want to make changes on your information, contact our support.
+              Add at least one phone number for the transfer ID so you can start
+              transfering your money to another user.
             </div>
-            <div class="border-menu-personal-info">
-              <div class="text-firstName-placeholder">First Name</div>
-              <div class="text-firstName">Robert</div>
-            </div>
-            <div class="border-menu-personal-info">
-              <div class="text-firstName-placeholder">Last Name</div>
-              <div class="text-firstName">Chandler</div>
-            </div>
-            <div class="border-menu-personal-info">
-              <div class="text-firstName-placeholder">Verified E-mail</div>
-              <div class="text-firstName">pewdiepie1@gmail.com</div>
-            </div>
-            <div class="border-menu-personal-info">
-              <div class="text-firstName-placeholder">Phone Number</div>
-              <div class="border-text-notelp-profil">
-                <div class="text-firstName">+62 813-9387-7946</div>
-                <a href="addPhoneNumber.html">
-                  <div class="text-manage">Manage</div>
-                </a>
+            <form class="border-form-telp" >
+              <div class="border-form-telp-dalam" id="borderBawah">
+                <span class="space-form-telp">
+                  <img src="./Assets/phone-black.png" alt="" id="gambarPhone"/>
+                </span>
+                <span class="space-form-telp text-62">+62</span>
+                <span>
+                  <input
+                    class="input-telp"
+                    type="text"
+                    name="phoneNumber"
+                    onkeypress=" return/[0-9]/.test(event.key)"
+                    placeholder="Enter Your Phone Number"
+                    id="inputNoTelp"
+                  />
+                </span>
               </div>
-            </div>
+              <a href="#" id="buttonHref" >
+                <div class="border-menu-button-add" id="buttonAddPhone">Add Phone Number</div>
+              </a>
+            </form>
           </div>
         </div>
       </article>
@@ -170,4 +171,5 @@
       </div>
     </footer>
   </body>
+  <script src="./Scripts/addPhoneNumber.js"></script>
 </html>
