@@ -36,6 +36,8 @@
     />
     <link rel="stylesheet" href="./Styles/home.css" />
     <link rel="stylesheet" href="./Styles/history.css" />
+    <link rel="stylesheet" href="./Styles/status.css" />
+    <link rel="stylesheet" href="./Styles/profil.css" />
   </head>
   <body>
     <!-- header navbar -->
@@ -55,17 +57,17 @@
       </nav>
     </header>
     <!-- main home page -->
-    <main class="border-main">
+    <main class="border-main-profil">
       <article class="border-main-dalam">
-        <div class="border-main-kiri">
-          <div class="border-main-kiri-dalam">
+        <div class="border-main-kiri-profil">
+          <div class="border-main-kiri-dalam-status">
             <!-- dashboard -->
             <div class="border-main-list-menu">
-              <div class="pinggiran"></div>
+              <div></div>
               <a href="home.html">
-                <div class="border-menu selected">
+                <div class="border-menu">
                   <span>
-                    <img src="./Assets/grid.png" alt="" />
+                    <img src="./Assets/grid-hitam.png" alt="" />
                   </span>
                   <span class="text-menu">Dashboard</span>
                 </div>
@@ -97,11 +99,11 @@
             </div>
             <!-- Profil -->
             <div class="border-main-list-menu">
-              <div></div>
+              <div class="pinggiran"></div>
               <a href="#">
-                <div class="border-menu">
+                <div class="border-menu selected">
                   <span>
-                    <img src="./Assets/user.png" alt="" />
+                    <img src="./Assets/user-biru.png" alt="" />
                   </span>
                   <span class="text-menu">Profil</span>
                 </div>
@@ -111,7 +113,7 @@
             <div class="border-main-list-menu custom-text-logout">
               <div></div>
               <a href="index.html">
-                <div class="border-menu">
+                <div class="border-menu-profil">
                   <span>
                     <img src="./Assets/log-out.png" alt="" />
                   </span>
@@ -122,47 +124,63 @@
           </div>
         </div>
         <!-- layout kanan -->
-        <div class="border-main-kanan">
-          <!-- Menu Transaction History -->
+        <div class="border-main-kanan-profil">
+          <!-- Menu Status -->
           <div class="border-kanan-history">
-            <div>
-              <p class="text-history">Transaction History</p>
-              <p class="text-this-week">This Week</p>
+            <div class="border-profil-image">
+              <div class="profil-image"></div>
             </div>
-            <!-- history per orang -->
-            <div class="border-main-transaction-history">
-              <div class="transaction-history-image"></div>
-              <div class="transaction-description">
-                <div class="transaction-name">Samuel Suhi</div>
-                <div class="transaction-type">Transfer</div>
-              </div>
-              <div class="history-nominal-minus">-Rp50.000</div>
+            <div class="border-edit-text">
+              <a href="#" class="edit-text">
+                <span>
+                  <img src="./Assets/pencil.png" alt="Edit" />
+                </span>
+                <span>Edit</span>
+              </a>
             </div>
-            <div class="border-main-transaction-history">
-              <div class="transaction-history-image custom-image"></div>
-              <div class="transaction-description">
-                <div class="transaction-name">Adobe</div>
-                <div class="transaction-type">Transfer</div>
-              </div>
-              <div class="history-nominal-plus">+Rp50.000</div>
-            </div>
-            <!-- this month text -->
-            <div class="text-this-month">This Month</div>
-            <div class="border-main-transaction-history">
-              <div class="transaction-history-image custom-image-1"></div>
-              <div class="transaction-description">
-                <div class="transaction-name ">Netflix</div>
-                <div class="transaction-type">Subscription</div>
-              </div>
-              <div class="history-nominal-minus">-Rp130.000</div>
-            </div>
-            <div class="border-main-transaction-history">
-              <div class="transaction-history-image custom-image-2"></div>
-              <div class="transaction-description">
-                <div class="transaction-name">Christine</div>
-                <div class="transaction-type">Transfer</div>
-              </div>
-              <div class="history-nominal-plus">+Rp100.000.000</div>
+            <div class="text-nama">Robert Chandler</div>
+            <div class="text-notelp">+62 813-9398-4156</div>
+            <div class="border-menu-profil-page">
+              <a href="personalInformation.html">
+                <div class="border-menu-profil-dalam">
+                  <div class="border-menu-profil-isi">
+                    <div>Personal Information</div>
+                    <div>
+                      <img src="./Assets/arrow-left.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="border-menu-profil-dalam">
+                  <div class="border-menu-profil-isi">
+                    <div>Change Password</div>
+                    <div>
+                      <img src="./Assets/arrow-left.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="border-menu-profil-dalam">
+                  <div class="border-menu-profil-isi">
+                    <div>Change Pin</div>
+                    <div>
+                      <img src="./Assets/arrow-left.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="border-menu-profil-dalam">
+                  <div class="border-menu-profil-isi">
+                    <div>Logout</div>
+                    <div>
+                      <img src="./Assets/arrow-left.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
