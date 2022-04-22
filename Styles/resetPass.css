@@ -146,3 +146,20 @@ body{
     bottom: 516px;
 }
 
+#btnEye1{
+    position: absolute;
+    right: 300px;
+    color: #A9A9A999;
+    bottom: 611px;
+    background: none;
+    border: none;
+}
+
+#btnEye2{
+    position: absolute;
+    right: 300px;
+    color: #A9A9A999;
+    bottom: 511px;
+    background: none;
+    border: none;
+}

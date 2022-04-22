@@ -51,13 +51,46 @@
             <div class="nav-notelp">+62 8139 3877 7946</div>
           </div>
           <div class="nav-bell">
-            <img src="./Assets/Bell.png" alt="Bell" class="bell" />
+            <button id="bellButton" onclick="if(document.getElementById(`notifMenu`).style.display ==`block`){
+              closeNav();
+            }else{
+              openNav();
+          }"><img src="../Assets/Bell.png" alt="Bell" class="bell" /></button>
           </div>
         </div>
       </nav>
     </header>
     <!-- main home page -->
     <main class="border-main-profil">
+      <div id="notifMenu">
+        <div class="notif-box">
+          <h3 class="today">Today</h3>
+          <br>
+          <div class="today1">
+            <p><span>&darr;</span> Transfered from Joshua Lee</p>
+            <h3>Rp220.000</h3>
+          </div>
+          <br>
+          <div class="today2">
+            <p> <span>&uarr;</span> Netflix subscription</p>
+            <h3>Rp149.000</h3>
+          </div>
+          <br>
+          <br>
+          <h3 class="week">Last Week</h3>
+          <br>
+          <div class="week1">
+            <p><span>&uarr;</span> Netflix subscription</p>
+           <h3>Rp149.000</h3>
+            </div>
+            <br>
+          <div class="week2">
+            <p><span>&darr;</span> Top up from BNI E-Banking</p>
+            <h3>Rp300.000</h3>
+          </div>
+          <br>
+        </div>
+      </div>
       <article class="border-main-dalam">
         <div class="border-main-kiri-profil">
           <div class="border-main-kiri-dalam-status">
@@ -100,7 +133,7 @@
             <!-- Profil -->
             <div class="border-main-list-menu">
               <div class="pinggiran"></div>
-              <a href="#">
+              <a href="profil.html">
                 <div class="border-menu selected">
                   <span>
                     <img src="./Assets/user-biru.png" alt="" />
@@ -151,7 +184,7 @@
                   </div>
                 </div>
               </a>
-              <a href="#">
+              <a href="changePass.html">
                 <div class="border-menu-profil-dalam">
                   <div class="border-menu-profil-isi">
                     <div>Change Password</div>
@@ -161,7 +194,7 @@
                   </div>
                 </div>
               </a>
-              <a href="#">
+              <a href="changePin.html">
                 <div class="border-menu-profil-dalam">
                   <div class="border-menu-profil-isi">
                     <div>Change Pin</div>
@@ -198,4 +231,5 @@
       </div>
     </footer>
   </body>
+  <script src="./Scripts/home.js"></script>
 </html>
