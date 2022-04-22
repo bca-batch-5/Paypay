@@ -1,0 +1,37 @@
+.text-judul-topup {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #3a3d42;
+}
+.border-kanan-topup{
+    height: 92px;
+    background: #ffffff;
+    box-shadow: 0px 4px 20px rgb(0 0 0 / 15%);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+.text-angka{
+    margin-right: 20px;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #6379F4;
+}
+.text-description-topup{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    color: #7A7886;
+}
