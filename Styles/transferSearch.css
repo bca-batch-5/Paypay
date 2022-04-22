@@ -1,0 +1,57 @@
+.border-kanan-transfer{
+    width: 987px;
+    height: 100%;
+    border-radius: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgb(0 0 0 / 20%);
+    border-radius: 25px;
+    padding: 40px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.transfer-title h2{
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.search-box{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #3A3D421A;
+    height: 40px;
+    font-size: 21px;
+}
+.search-box i{
+    margin-left: 5px;
+   
+}
+.search-box input{
+    border: none;
+    background: none;
+    color: black;
+    margin-left: 10px;
+    outline: none;
+    width: 95%;
+    
+}
+
+.transfer-menu{
+    display: flex;
+    background-color: white;
+    box-shadow: 0px 4px 20px rgb(0 0 0 / 20%);
+    align-items: center;
+    border-radius: 10px;
+    height: 75px;
+}
+
+.menu-image{
+    margin-left: 20px;
+}
+
+.menu-text{
+    margin-left: 20px;
+}
+.menu-text p{
+    margin: 0;
+    color: black;
+}

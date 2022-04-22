@@ -5,6 +5,7 @@ const lock = document.getElementById("lock")
 const btnEye = document.getElementById("btnEye")
 const alertId = document.getElementById("alert")
 const btnLogin = document.getElementById("btnLogin")
+const aHref = document.getElementById("aHref")
 
 email.addEventListener("click",() =>{
     alertId.style.display=`none`;
@@ -86,6 +87,7 @@ function validationEmail() {
         pass.style.borderBottomColor=`red`;
         btnEye.style.color=`red`;
         alertId.style.display=`block`;
+        aHref.href ="#";
     }
 }
 
