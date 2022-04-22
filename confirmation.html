@@ -35,9 +35,34 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./Styles/home.css">
-    <link rel="stylesheet" href="./Styles/transferSearch.css">
+    <link rel="stylesheet" href="./Styles/confirmation.css">
   </head>
   <body>
+    <div id="confirmPin">
+      <div class="confirmPin-box">
+        <div class="pin-title">
+          <div class="pin-text">
+            <h2>Enter PIN to Transfer</h2>
+            <p>Enter your 6 digits PIN for confirmation to continue transferring money</p>
+          </div>
+          <button id="closeBtn">&#9587;</button>
+        </div>
+        <form class="pin-form"">
+          <input class="form" type="text" maxlength="1" id ="first" onkeypress=" return/[0-9]/i.test(event.key)" onkeyup="moveEvent(this,`sec`)">
+          <input class="form" type="text" maxlength="1" id ="sec" onkeypress=" return/[0-9]/i.test(event.key)" onkeyup="moveEvent(this,`third`)">
+          <input class="form" type="text" maxlength="1" id ="third" onkeypress=" return/[0-9]/i.test(event.key)" onkeyup="moveEvent(this,`fourth`)">
+          <input class="form" type="text" maxlength="1" id ="fourth" onkeypress=" return/[0-9]/i.test(event.key)" onkeyup="moveEvent(this,`fifth`)">
+          <input class="form" type="text" maxlength="1" id ="fifth" onkeypress=" return/[0-9]/i.test(event.key)" onkeyup="moveEvent(this,`six`)">
+          <input class="form" type="text" maxlength="1" id ="six" onkeypress=" return/[0-9]/i.test(event.key)">
+      </form>
+      <br>
+      <br>
+        <div class="btn-pin">
+          <a href="#"><button id="btnPin">Continue</button></a>
+        </div>
+      </div>
+
+    </div>
     <!-- header navbar -->
     <header>
       <nav>
@@ -158,17 +183,10 @@
           <!-- Menu Transfer List -->
           <div class="border-kanan-transfer">
             <div class="transfer-title">
-              <h2>Search Receiver</h2>
+              <h2>Transfer to</h2>
             </div>
             <br>
-            <div class="search-box">
-              <i class="fa fa-search"></i>
-              <input type="search" placeholder="Search..">
-            </div>
-            <br>
-            <br>
-            <br>
-            <a href="./inputTransfer.html"><div class="transfer-menu menu1">
+            <div class="transfer-menu menu1">
               <div class="menu-image">
                 <img src="./Assets/Ragil.png" alt="Ragil">
               </div>
@@ -176,38 +194,34 @@
                 <p style="font-weight: 700;">Samuel Suhi</p>
                 <p>+62 813-8492-9994</p>
               </div>
-            </div></a>
+            </div>
             <br>
-            <a href="#"><div class="transfer-menu menu2">
-              <div class="menu-image">
-                <img src="./Assets/Foto2.png" alt="Momo">
-              </div>
-              <div class="menu-text">
-                <p style="font-weight: 700;">Momo Taro</p>
-                <p>+62 812-4343-6731</p>
-              </div>
-            </div></a>
+            <div class="transfer-detail">
+              <h2>Detail</h2>
+            </div>
+            <div class="transfer-menu-detail">
+              <p>Amount</p>
+              <h2>Rp.100.000</h2>
+            </div>
             <br>
-            <a href="#"><div class="transfer-menu menu3">
-              <div class="menu-image">
-                <img src="./Assets/Foto1.jpg" alt="Jessica">
-              </div>
-              <div class="menu-text">
-                <p style="font-weight: 700;">Jessica Keen</p>
-                <p>+62 811-3452-5252</p>
-              </div>
-            </div></a>
+            <div class="transfer-menu-detail">
+              <p>Balance Left</p>
+              <h2>Rp.20.000</h2>
+            </div>
             <br>
-            <a href="#"><div class="transfer-menu menu4">
-              <div class="menu-image">
-                <img src="./Assets/Foto3.jpg" alt="Michael">
-              </div>
-              <div class="menu-text">
-                <p style="font-weight: 700;">Michael Le</p>
-                <p>+62 810-4224-4613</p>
-              </div>
-            </div></a>
+            <div class="transfer-menu-detail">
+              <p>Date & Time</p>
+              <h2>May 11,2020 - 12.20</h2>
+            </div>
             <br>
+            <div class="transfer-menu-detail">
+              <p>Notes</p>
+              <h2>For buying some socks</h2>
+            </div>
+            <br>
+            <div class="btn-cont">
+             <button id="btnCont">Continue</button>
+            </div>
           </div>
       </article>
     </main>
@@ -223,6 +237,13 @@
       </div>
     </footer>
   </body>
-
+  <script>
+    function moveEvent(first,last) {
+    if (first.value.length >= first.maxLength) {
+        document.getElementById(last).focus();
+      }
+    }
+  </script>
+  <script src="./Scripts/confirmation.js"></script>
   <script src="./Scripts/home.js"></script>
 </html>

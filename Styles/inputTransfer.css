@@ -1,0 +1,97 @@
+.border-kanan-transfer{
+    width: 987px;
+    height: 100%;
+    border-radius: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgb(0 0 0 / 20%);
+    border-radius: 25px;
+    padding: 40px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.transfer-title h2{
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.transfer-menu{
+    display: flex;
+    background-color: white;
+    box-shadow: 0px 4px 20px rgb(0 0 0 / 20%);
+    align-items: center;
+    border-radius: 10px;
+    height: 75px;
+}
+
+.menu-image{
+    margin-left: 20px;
+}
+
+.menu-text{
+    margin-left: 20px;
+}
+.menu-text p{
+    margin: 0;
+    color: black;
+}
+
+.input-text{
+    width: 35%;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.input-box{
+    text-align: center;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.input-nom{
+    font-size: 50px;
+    font-weight: 700;
+    color: #A9A9A999;
+}
+
+#nominal{
+    border: none;
+    outline: none;
+    color: #A9A9A999;
+    text-align: center;
+    font-weight: 700;
+}
+
+.available{
+    font-weight: 700;
+    font-size: 16px;
+}
+
+#inputNotes{
+    border-bottom: 2px solid #A9A9A999;
+    width: 50%;
+    margin-left: 25%;
+    text-align: left;
+}
+
+#notes{
+    border: none;
+    outline: none;
+    width: 90%;
+}
+
+.fa-pen{
+    color: #A9A9A999;
+}
+.btn-cont{
+    text-align: right;
+    margin-top: 80px;
+}
+#btnCont{
+    width: 90px;
+    height: 40px;
+    background-color: #6379F4;
+    border: none;
+    color: white;
+    border-radius: 10px;
+}

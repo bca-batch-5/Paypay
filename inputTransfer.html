@@ -35,7 +35,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./Styles/home.css">
-    <link rel="stylesheet" href="./Styles/transferSearch.css">
+    <link rel="stylesheet" href="./Styles/inputTransfer.css">
   </head>
   <body>
     <!-- header navbar -->
@@ -158,17 +158,10 @@
           <!-- Menu Transfer List -->
           <div class="border-kanan-transfer">
             <div class="transfer-title">
-              <h2>Search Receiver</h2>
+              <h2>Transfer Money</h2>
             </div>
             <br>
-            <div class="search-box">
-              <i class="fa fa-search"></i>
-              <input type="search" placeholder="Search..">
-            </div>
-            <br>
-            <br>
-            <br>
-            <a href="./inputTransfer.html"><div class="transfer-menu menu1">
+            <a href="#"><div class="transfer-menu menu1">
               <div class="menu-image">
                 <img src="./Assets/Ragil.png" alt="Ragil">
               </div>
@@ -178,36 +171,26 @@
               </div>
             </div></a>
             <br>
-            <a href="#"><div class="transfer-menu menu2">
-              <div class="menu-image">
-                <img src="./Assets/Foto2.png" alt="Momo">
-              </div>
-              <div class="menu-text">
-                <p style="font-weight: 700;">Momo Taro</p>
-                <p>+62 812-4343-6731</p>
-              </div>
-            </div></a>
-            <br>
-            <a href="#"><div class="transfer-menu menu3">
-              <div class="menu-image">
-                <img src="./Assets/Foto1.jpg" alt="Jessica">
-              </div>
-              <div class="menu-text">
-                <p style="font-weight: 700;">Jessica Keen</p>
-                <p>+62 811-3452-5252</p>
-              </div>
-            </div></a>
-            <br>
-            <a href="#"><div class="transfer-menu menu4">
-              <div class="menu-image">
-                <img src="./Assets/Foto3.jpg" alt="Michael">
-              </div>
-              <div class="menu-text">
-                <p style="font-weight: 700;">Michael Le</p>
-                <p>+62 810-4224-4613</p>
-              </div>
-            </div></a>
-            <br>
+            <div class="input-text">
+              <p>Type the amount you want to transfer and then
+                press continue to the next steps.</p>
+            </div>
+            <div class="input-box">
+              <form class="input-nom">
+                <input id="nominal" type="text" onkeypress=" return/"[0-9]/.test(event.key)" placeholder="0.00">
+              </form> 
+              <br>
+              <p class="available">Rp120.000 Available</p>
+              <br>
+              <br>
+              <form id="inputNotes">
+                <i id="pen" class="fa fa-pen"></i>
+                <input id="notes" type="text" placeholder="Add some notes">
+              </form>
+            </div>
+            <div class="btn-cont">
+              <a href="./confirmation.html"><button id="btnCont">Continue</button></a>
+            </div>
           </div>
       </article>
     </main>
@@ -225,4 +208,5 @@
   </body>
 
   <script src="./Scripts/home.js"></script>
+  <script src="./Scripts/inputTransfer.js"></script>
 </html>
