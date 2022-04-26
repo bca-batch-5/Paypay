@@ -96,10 +96,11 @@ function validationEmail() {
 
 btnLogin.disabled = true;
 
-email,pass.addEventListener(`input`, btnChange)
+pass.addEventListener(`input`, btnChange)
+email.addEventListener(`input`, btnChange)
 
 function btnChange() {
-    if (pass.value == "") {
+    if (pass.value == "" || email.value == "") {
         btnLogin.disabled = true;
         btnLogin.style.backgroundColor="#A9A9A999"
         btnLogin.style.color="grey"

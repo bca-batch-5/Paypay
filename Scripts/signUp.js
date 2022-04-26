@@ -6,7 +6,7 @@ const username = document.getElementById("username")
 const user =document.getElementById("user")
 const btnEye = document.getElementById("btnEye")
 const btnSignUp = document.getElementById("btnSignUp")
-
+const aHref = document.getElementById("aHref")
 
 
 username.addEventListener("input",() =>{
@@ -80,6 +80,25 @@ btnEye.addEventListener("click",() =>{
     }
 })
 
+// bagian validasi email
+
+function validationEmail() {
+    let format = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if (email.value.match(format) ) {
+        aHref.href ="createPin.html";
+        return true;
+    }else{
+        username.style.borderBottomColor =`red`;
+        user.style.color=`red`
+        icon.style.color=`red`;
+        email.style.borderBottomColor=`red`;
+        lock.style.color=`red`;
+        pass.style.borderBottomColor=`red`;
+        btnEye.style.color=`red`;
+        aHref.href ="#";
+        alert(`email yang dimasukkan salah`)
+    }
+}
 
 
 // disable button\
@@ -87,10 +106,13 @@ btnEye.addEventListener("click",() =>{
 
 btnSignUp.disabled = true;
 
+username.addEventListener(`input`, btnChange)
+email.addEventListener(`input`, btnChange)
 pass.addEventListener(`input`, btnChange)
 
+
 function btnChange() {
-    if (username.value == ""&email.value == ""&pass.value == "") {
+    if (username.value == "" || email.value == "" || pass.value == "") {
         btnSignUp.disabled = true;
         btnSignUp.style.backgroundColor="#A9A9A999"
         btnSignUp.style.color="grey"
