@@ -7,7 +7,8 @@ const lock3 = document.getElementById(`lock3`)
 const btnEye1 = document.getElementById(`btnEye1`)
 const btnEye2 = document.getElementById(`btnEye2`)
 const btnEye3 = document.getElementById(`btnEye3`)
-
+const changeHref = document.getElementById(`changeHref`)
+const btnChange = document.getElementById(`btnChange`)
 // bagian 1
 pass1.addEventListener("input",() =>{
     if(pass1.value == "") {
@@ -116,3 +117,33 @@ btnEye3.addEventListener("click",() =>{
         iconBtn3.classList.remove(`fa-eye`)
     }
 })
+
+
+
+// validasi password
+btnChange.addEventListener(`click`,()=>{
+    if (pass1.value != `abogoboga`) {
+        alert(`password lama anda salah`);
+        changeHref.href=`#`;
+    }else{
+        changeHref.href=`profil.html`;
+    }
+})
+
+btnChange.addEventListener(`click`,()=>{
+    if (pass3.value != pass2.value) {
+        alert(`password anda salah`);
+        changeHref.href=`#`;
+    }else{
+        changeHref.href=`profil.html`;
+    }
+})
+
+btnChange.addEventListener(`click`,()=>{
+    if (pass1.value ==true || pass3.value ==true) {
+        alert(`password baru berhasil dibuat`);
+    }
+    
+})
+
+

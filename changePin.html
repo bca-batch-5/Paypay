@@ -51,11 +51,7 @@
             <div class="nav-notelp">+62 8139 3877 7946</div>
           </div>
           <div class="nav-bell">
-            <button id="bellButton" onclick="if(document.getElementById(`notifMenu`).style.display ==`block`){
-              closeNav();
-            }else{
-              openNav();
-          }"><img src="./Assets/Bell.png" alt="Bell" class="bell" /></button>
+            <button id="bellButton" onclick="funcBell()"><img src="./Assets/Bell.png" alt="Bell" class="bell" /></button>
           </div>
         </div>
       </nav>
@@ -179,7 +175,7 @@
             <br>
             <br>
             <div class="btn-change">
-              <a href="newPin.html"><button id="btnChange">Continue</button></a>
+              <a id="changeHref" href="#"><button id="btnChange">Continue</button></a>
             </div>
           </div>
         </div>
@@ -206,4 +202,5 @@
   </script>
 
   <script src="./Scripts/home.js"></script>
+  <script src="./Scripts/changePin.js"></script>
 </html>
