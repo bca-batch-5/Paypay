@@ -171,22 +171,24 @@
               <p>Type the amount you want to transfer and then
                 press continue to the next steps.</p>
             </div>
+            <form>
             <div class="input-box">
-              <form class="input-nom">
+              <div class="input-nom">
                 <input id="nominal" type="text" onkeypress=" return/[0-9]/.test(event.key)" placeholder="Rp 0.00">
-              </form> 
+              </div> 
               <br>
               <p class="available">Rp120.000 Available</p>
               <br>
               <br>
-              <form id="inputNotes">
+              <div id="inputNotes">
                 <i id="pen" class="fa fa-pen"></i>
                 <input id="notes" type="text" placeholder="Add some notes">
-              </form>
+              </div>
             </div>
             <div class="btn-cont">
-              <a href="./confirmation.html"><button id="btnCont">Continue</button></a>
+             <button id="btnCont" type="submit"> <a href="#" id="formTransfer">Continue</a></button>
             </div>
+            </form>
           </div>
       </article>
     </main>

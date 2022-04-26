@@ -2,7 +2,14 @@ const nominal = document.getElementById(`nominal`);
 const notes = document.getElementById(`notes`);
 const pen = document.getElementById("pen");
 const inputNotes = document.getElementById("inputNotes");
-let tempHasil;
+const transferForm = document.getElementById("formTransfer");
+const submit = document.getElementById("btnCont");
+
+let temp;
+
+const user = {
+  saldo:30000
+};
 
 nominal.addEventListener("click", () => {
   //   nominal.value = "Rp ";
@@ -19,10 +26,28 @@ nominal.addEventListener("focusout", () => {
 nominal.addEventListener("input", () => {
   if (nominal.value !== "") {
     nominal.style.color = `#6379F4`;
-    console.log(nominal.value);
     nominal.value = formatRupiah(nominal.value, 'Rp. ');
+    console.log(nominal.value);
+    temp = nominal.value.match(/\d/g);
   }
+  
 });
+
+submit.addEventListener("click", () =>{
+  let nominalTransfer = '';
+  for(let i = 0 ;i<temp.length;i++){
+    nominalTransfer +=temp[i];
+  } 
+  console.log(temp);
+  console.log(nominalTransfer);
+
+  if(user.saldo < nominalTransfer){
+    alert("Saldo Tidak Cukup");
+  }
+
+  transferForm.href="./confirmation.html";
+})
+
 
 function formatRupiah(angka, prefix) {
   var number_string = angka.replace(/[^,\d]/g, '').toString(),
