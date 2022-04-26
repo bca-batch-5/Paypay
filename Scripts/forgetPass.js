@@ -1,7 +1,7 @@
 const email = document.getElementById("email")
 const icon  = document.getElementById("envelope")
 const btnConfirm =document.getElementById("btnConfirm")
-
+const aHref = document.getElementById(`aHref`)
 email.addEventListener("click",() =>{
     email.style.outline=`none`;
 })
@@ -41,4 +41,18 @@ function btnChange() {
         btnConfirm.style.color=`white`
     }
     
+}
+
+// validasi email
+function validationEmail() {
+    let format = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if (email.value.match(format) ) {
+        aHref.href ="resetPass.html";
+        return true;
+    }else{
+        icon.style.color=`red`;
+        email.style.borderBottomColor=`red`;
+        aHref.href ="#";
+        alert(`email yang anda masukkan salah`);
+    }
 }
