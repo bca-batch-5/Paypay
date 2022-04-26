@@ -51,11 +51,7 @@
             <div class="nav-notelp">+62 8139 3877 7946</div>
           </div>
           <div class="nav-bell">
-            <button id="bellButton" onclick="if(document.getElementById(`notifMenu`).style.display ==`block`){
-              closeNav();
-            }else{
-              openNav();
-          }"><img src="./Assets/Bell.png" alt="Bell" class="bell" /></button>
+            <button id="bellButton" onclick="funcBell()"><img src="./Assets/Bell.png" alt="Bell" class="bell" /></button>
           </div>
         </div>
       </nav>
@@ -186,7 +182,7 @@
               </form>
             <br>
             <br>
-            <a href="profil.html"><button id="btnChange">Change Password</button></a>
+            <a id="changeHref" href="#"><button id="btnChange">Change Password</button></a>
           </div>
           </div>
         </div>
