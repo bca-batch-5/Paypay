@@ -95,3 +95,8 @@
     color: white;
     border-radius: 10px;
 }
+
+.btn-cont button a{
+    text-decoration: none;
+    color: white;
+}
